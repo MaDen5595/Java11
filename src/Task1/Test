@@ -1,0 +1,101 @@
+package Task1;
+
+import java.util.Date;
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Имя разраба: ");
+        String name = sc.nextLine();
+        Date poluch = new Date();
+        Date sdal = new Date();
+        int year, mounth, date, hours, minutes, secs;
+        System.out.print("Введите год получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        year = sc.nextInt();
+        System.out.print("Введите месяц получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        mounth = sc.nextInt();
+        System.out.print("Введите число получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        date = sc.nextInt();
+        System.out.print("Введите часы получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        hours = sc.nextInt();
+        System.out.print("Введите минуты получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        minutes = sc.nextInt();
+        System.out.print("Введите секунды получения: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        secs = sc.nextInt();
+        poluch.setYear(year-1900);
+        poluch.setMonth(mounth-1);
+        poluch.setDate(date);
+        poluch.setHours(hours);
+        poluch.setMinutes(minutes);
+        poluch.setSeconds(secs);
+        System.out.print("Введите год сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        year = sc.nextInt();
+        System.out.print("Введите месяц сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        mounth = sc.nextInt();
+        System.out.print("Введите число сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        date = sc.nextInt();
+        System.out.print("Введите часы сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        hours = sc.nextInt();
+        System.out.print("Введите минуты сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        minutes = sc.nextInt();
+        System.out.print("Введите секунды сдачи: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Введите заново: ");
+            sc.nextLine();
+        }
+        secs = sc.nextInt();
+        sdal.setYear(year-1900);
+        sdal.setMonth(mounth-1);
+        sdal.setDate(date);
+        sdal.setHours(hours);
+        sdal.setMinutes(minutes);
+        sdal.setSeconds(secs);
+        Razrab a = new Razrab(name,poluch,sdal);
+        System.out.println(a.toString());
+    }
+}
