@@ -1,0 +1,23 @@
+package Task1;
+
+import java.util.Date;
+
+public class Razrab {
+    private String name;
+    private Date poluchil;
+    private Date sdal;
+    Razrab(String name, Date poluchil, Date sdal){
+        this.name = name;
+        this.poluchil = poluchil;
+        this.sdal = sdal;
+    }
+
+    @Override
+    public String toString() {
+        return "Razrab{" +
+                "имя='" + name + '\'' +
+                ", время получения=" + poluchil +
+                ", время сдачи=" + sdal +
+                '}';
+    }
+}
